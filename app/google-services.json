@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "165941856479",
+    "project_id": "mobileapp-5007f",
+    "storage_bucket": "mobileapp-5007f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165941856479:android:17f85d3179152046c3016a",
+        "android_client_info": {
+          "package_name": "com.example.mad_rv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6RP-34-6y6Vy9ZjTluDOjFlwmsxfAs3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

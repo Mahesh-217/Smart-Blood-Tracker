@@ -1,0 +1,94 @@
+<!-- res/layout/item_request.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/square_border"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_width="80dp"
+        android:id="@+id/bloodBankImg"
+        android:layout_height="80dp"
+        android:src="@drawable/blood_drop"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/bloodBankImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varela_round"
+            android:textSize="18sp"
+            android:id="@+id/requestRecipientName"
+            android:singleLine="true"
+            android:maxWidth="180dp"
+            android:text="Recipient: John Doe"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varela_round"
+            android:id="@+id/requestBloodGroup"
+            android:textSize="18sp"
+            android:maxWidth="180dp"
+            android:singleLine="true"
+            android:text="Blood Group: A+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varela_round"
+            android:textSize="18sp"
+            android:id="@+id/requestContactNumber"
+            android:singleLine="true"
+            android:maxWidth="180dp"
+            android:text="Contact: 1234567890"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varela_round"
+            android:textSize="18sp"
+            android:id="@+id/requestLocation"
+            android:maxWidth="180dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="Location: City ABC"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:id="@+id/icons">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/share"
+            android:tooltipText="share"
+            android:src="@drawable/ic_baseline_share_24"/>
+
+        <ImageView
+            android:tooltipText="Call"
+            android:layout_width="40dp"
+            android:id="@+id/call"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_call_24"/>
+    </LinearLayout>
+</RelativeLayout>
